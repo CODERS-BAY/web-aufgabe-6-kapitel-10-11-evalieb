@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- im Head steht alles, was der user nicht sieht -->
+        <title>Zoo von und zu Sattmann</title>
+        <meta charset="UTF-8">
+       <!-- damit es am Handy auch großengerecht responsie ausschaut -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- die description ist wichtig für die Suchmaschinen Suche, sollte kurz sein -->
+        <link rel="stylesheet" href="css/style.css">
+        <!--hier kommt mein ultra cooles favicon-->
+        <link rel="icon" type="image/jpg" href="img/favicon.ico">
+        <!--Schriftart über google fonts einbinden-->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet"> 
+
+    </head>
+    <body>
+        <header>
+            <h1>Herzlich Willkommen im Zoo von und zu Sattmann</h1>
+            <nav class="navBlock">
+                <ul class="navUl">
+                    <li class="navLi"><a href="index.html">Home</a></li>
+                    <li class="navLi"><a href="info.html">Info</a></li>
+                    <li class="navLi"><a class="aktuell" href="kontakt.html">Kontakt</a></li>
+                    <li class="navLi"><a href="imZoo.html">Im Zoo</a></li>
+                    <li class="navLi"><a href="impressum.html">Impressum</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+        
+            <h2 id="kontaktform">Mein Besuch im Zoo</h2>
+
+            <form  method="GET" action="ausgabe.html">
+                <fieldset>
+                    <legend class="formular">Kontaktformular</legend>
+                    <label for="name">Name</label> 
+                    <input type="text" name="Name" id="name" required>
+                    <hr>
+                    <label for="email">Email</label>
+                    <input type="email" name="Email" id="mail" required>
+                    <hr>
+                    <label for="visitDate">Besuchstag</label>
+                    <input type="date" name="Besuchsdatum" id="visitDate">
+                    <hr>
+                    <label for="vistTime">Besuchszeit</label>
+                    <input type="time" name="Besuchszeit" id="visitTime">
+                    <hr>
+                    <label class="like" for="like">Hat es Ihnen bei uns gefallen?</label>
+                    <div class="zoobarometer">
+                        <input type="range" name="Zoobarometer" min="0" max="10" id="like">
+                        <p class="zoobarometer">schieben Sie den Riegler nach links für sehr gut!</p>
+                    </div><hr>
+                    <label for="recommentation">Würden Sie uns weiterempfehlen</label>
+                    <input type="radio" name="Weiterempfehlung" id="yes" value="yes" checked>
+                    <label for="yes">Ja</label>
+                    <input type="radio" name="Weiterempfehlung" id="no" value="no">
+                    <label for="no">Nein</label>
+                    <hr>
+                    <label for="likeMost">Welche Tierart hat Ihnen am Besten gefallen</label>
+                    <select name="Mein_Lieblngstier" id="likeMost" multiple size="5">
+                        <option value="Erdmännchen">Erdmännchen </option>
+                        <option value="Elefanten">Elefanten </option>
+                        <option value="Hasen">Hasen </option>
+                        <option value="Emus">Emus </option>
+                        <option value="Giraffen">Giraffen </option>
+                        <option value="Affen">Affen </option>
+                        <option value="Ziegen">Ziegen </option>
+                    </select>
+                    <hr>
+                    <label for="comment">Kommentar</label>
+                    <textarea rows="5" cols="20" name="Kommentar" id="comment" placeholder="Ihre Mitteilung an uns"></textarea>
+                    <hr>
+                    <label for="visitInfo">Besucherinfo</label>
+                    <select name="Besucherinfo" id="visitInfo" required>
+                        <option value="">Bitte auswählen</option>
+                        <option value="Familie">Familienausflug</option>
+                        <option value="alleine">Allein unterwegs</option>
+                        <option value="Gruppe">Gruppenausflug</option>
+                        <option value="Freunde">Ausflug mit Freunden</option>
+                        <option value="sonstiges">sonstiger Besuch</option>
+                    </select>
+                    <hr>
+                    <input type="checkbox" name="Datenverarbeitung" value="Ja" id="accept" required >
+                    <label for="accept">Ich stimme der Verarbeitung meiner Daten zu!<br>
+                    <a href="dsgvo.html" target="_blank">Unsere DSGVO</a></label>
+                    <hr><hr>
+                    <button type="submit">Absenden</button>
+                    <button type="reset">Eingaben löschen</button>
+                    
+
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            &copy; 2020 von Eva Liebmann
+        </footer>
+    </body>
+</html>
