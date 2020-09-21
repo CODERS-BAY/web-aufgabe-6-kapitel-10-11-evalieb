@@ -1,0 +1,157 @@
+
+body{
+    background-color: rgba(144, 216, 71, 0.7);
+    font-family: Raleway, "open sans", sans-serif;
+    margin: auto;
+    border: 0; 
+    max-width: 1200px;
+    display: block;
+    text-align: center;
+}
+
+h1{
+  float: center;
+  font-variant: small-caps;
+}
+.navUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(140, 52, 32, .9);
+    color: #90D948;
+  }
+  
+.navLi {
+  float: left;
+  font-family: "Red Rose", "open sans", sans-serif;
+}
+
+  li a {
+    
+    display: block;
+    color: #FFFBFC;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+    
+    /* Change the link color on hover */
+  li a:hover {
+      background-color: #90D948;
+    }
+
+  li a:visited {
+    color: black;
+  }
+
+  li a:active {
+    background-color: #BF702A;
+    padding: 10px;
+    margin: 0;
+  }
+
+[class="aktuell"] {
+    border-style: dotted;
+  }
+
+footer {
+    margin-top: 20px;
+    font-style: oblique;
+    text-shadow: 2px 2px 2px #8C3420;
+}
+
+table{
+    width: 100%;
+
+}
+th{
+    text-align: left;
+}
+
+p.zoobarometer {
+  display: none;
+  
+}
+
+th::first-letter{
+  font-family: modak;
+  color: #8C3420;
+}
+
+div:hover p.zoobarometer{
+  display: block;
+}
+
+h2::first-letter {
+  color: #BF702A;
+  font-size: xx-large;
+  font-style: oblique;
+  font-family: serif;
+}
+
+a[target] {
+  background-color: #50723C;
+  text-decoration: unset;
+}
+
+input[type="text"] {
+  width: 150px;
+  margin-bottom: 10px;
+  background-color: #BF702A ;
+}
+
+button[type="submit"] {
+  width: 120px;
+  margin-left: 35px;
+  background-color: #BF702A;
+  border-color: #347322;
+}
+button[type="reset"] {
+  width: 120px;
+  margin-left: 35px;
+  background-color: #90D948;
+  color: #1E4019;
+}
+
+.imp {
+  background-image: url(../img/elefant.jpg);
+  padding: 200px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.impressum {
+  padding: 50px;
+  background-color:  rgba(51, 114, 34, .2);
+  color: #90D948;
+}
+
+.futter {
+  list-style: inside url(../img/oranTiny.png);
+  text-align: left;
+  padding: 1.5rem;
+  background-color: none;
+}
+
+.firstL::first-letter{
+  font-size: 200%;
+}
+
+
+.tierpark:hover{
+  text-decoration: #8C3420;
+  border-style: dashed;
+  color: #BF702A;
+}
+
+.formular {
+   font-variant: small-caps;
+}
+
+.like{
+  font-style: oblique;
+  font-variant-position: sub;
+}
